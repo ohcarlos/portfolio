@@ -27,7 +27,14 @@ Constraints:
 - Projects are SisPatrimonio (VB6 to web migration in C# MVC + Razor), Knowli (Hackathon UGB 2026, access control) and Python automation. Do not add a "portfolio site" project.
 - Keep `localStorage` theme persistence, keyboard support for tabs and the dialog, and the `#main-content` skip link intact.
 
-Not a git repository: no branches, PR flow, CI, or `git diff` to rely on.
+The repo is `ohcarlos/portfolio` on GitHub, branch `main`, published with GitHub Pages. There is no test suite or lint config.
+
+## Publishing
+
+- Live site: <https://ohcarlos.github.io/portfolio/>.
+- `.github/workflows/pages.yml` runs on push to `main`, copies `index.html`, `projetos.html` and `assets/` into `_site`, and deploys that. `AGENTS.md`, `.agents/` and `README.md` stay out of the public site on purpose.
+- Pages source is GitHub Actions (Settings > Pages). If the repo is renamed, only the URL changes and the workflow keeps working.
+- The repo was renamed from `portifolio` to `portfolio`; GitHub redirects the old repository URL, and the old Pages URL redirects too.
 
 ## Frontend design skill
 

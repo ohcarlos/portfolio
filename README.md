@@ -2,6 +2,8 @@
 
 Site pessoal de **Carlos Eduardo de Ataide Pedro**, estudante de Sistemas de Informação em Volta Redonda, RJ.
 
+Site no ar: <https://ohcarlos.github.io/portfolio/>.
+
 Duas páginas estáticas, sem build e sem dependências externas:
 
 - `index.html`: apresentação, stack, projetos em destaque, experiência, formação e contato.
