@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Eduardo de Ataide Pedro | Portfólio</title>
+  <meta name="description" content="Portfólio de Carlos Eduardo de Ataide Pedro, estudante de Sistemas de Informação em Volta Redonda, RJ. Projetos de desenvolvimento, automação e dados.">
+  <meta name="theme-color" content="#0F1210">
+  <meta property="og:title" content="Carlos Eduardo de Ataide Pedro | Portfólio">
+  <meta property="og:description" content="Estagiário de TI em Volta Redonda, RJ. Sistemas, automação e dados.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Carlos Ataide, início">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Carlos Ataide</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" data-nav="inicio" aria-current="page">Início</a></li>
+          <li><a href="projetos.html" data-nav="projetos">Projetos</a></li>
+          <li><a href="index.html#experiencia" data-nav="experiencia">Experiência</a></li>
+          <li><a href="index.html#contato" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema claro">
+          <svg class="icon icon-sun" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="hero-kicker mono">Portfólio · 2026</p>
+          <h1 class="hero-title" id="hero-title">Carlos Eduardo <span>de Ataide Pedro</span></h1>
+          <p class="hero-role">Estagiário de TI na Volkswagen Caminhões e Ônibus</p>
+          <p class="hero-sub">Desenvolvo automações, sistemas e dashboards que reduzem trabalho manual e apoiam decisões.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projetos.html">Ver projetos</a>
+            <a class="btn btn-ghost" href="assets/CV_Carlos_Eduardo.pdf" download>Baixar CV <span class="mono" aria-hidden="true">PDF</span></a>
+          </div>
+        </div>
+
+        <aside class="id-card" aria-label="Resumo do perfil" data-reveal>
+          <div class="id-card-head mono">
+            <span>Ficha atual</span>
+            <span class="dot" aria-hidden="true"></span>
+          </div>
+          <dl>
+            <div>
+              <dt>Local</dt>
+              <dd>Volta Redonda, RJ</dd>
+            </div>
+            <div>
+              <dt>Formação</dt>
+              <dd>Sistemas de Informação, UGB</dd>
+            </div>
+            <div>
+              <dt>Período</dt>
+              <dd>6º semestre · conclusão 12/2027</dd>
+            </div>
+            <div>
+              <dt>Foco</dt>
+              <dd>Automação, dados e desenvolvimento</dd>
+            </div>
+            <div>
+              <dt>Idiomas</dt>
+              <dd>Português nativo · inglês avançado</dd>
+            </div>
+          </dl>
+          <p class="id-card-foot mono">TI desde 2024</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="sobre-title">Do suporte à automação</h2>
+        </div>
+        <div class="about-grid">
+          <div class="prose" data-reveal>
+            <p>Atuo em TI desde 2024. Comecei no suporte técnico, passei pela manutenção de sistemas e hoje trabalho na digitalização de processos em ambiente industrial. Estudo Sistemas de Informação na UGB e uso <strong>C#, Python, SQL Server e Power BI</strong> para transformar tarefas manuais em fluxos mais simples.</p>
+            <p>O que mais me interessa é entender onde o processo trava e construir a menor solução que resolve aquilo: um script, uma consulta, um dashboard ou uma tela nova. Gosto de deixar o trabalho mais leve para quem usa o sistema no dia a dia.</p>
+          </div>
+
+          <aside class="stack-panel" aria-label="Tecnologias do dia a dia" data-reveal>
+            <h3>Stack do dia a dia</h3>
+            <ul class="logo-strip">
+              <li><span class="logo logo-dotnet" role="img" aria-label=".NET"></span></li>
+              <li><span class="logo logo-python" role="img" aria-label="Python"></span></li>
+              <li><span class="logo logo-git" role="img" aria-label="Git"></span></li>
+              <li><span class="logo logo-javascript" role="img" aria-label="JavaScript"></span></li>
+              <li><span class="logo logo-html5" role="img" aria-label="HTML5"></span></li>
+              <li><span class="logo logo-css" role="img" aria-label="CSS"></span></li>
+              <li><span class="logo logo-bootstrap" role="img" aria-label="Bootstrap"></span></li>
+              <li><span class="logo logo-github" role="img" aria-label="GitHub"></span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos" aria-labelledby="projetos-title">
+      <div class="wrap">
+        <div class="section-head section-head-row">
+          <div>
+            <h2 id="projetos-title">Projetos</h2>
+            <p class="section-lede">Sistemas, automações e um produto feito em hackathon. Cada case abre o contexto, o problema e as decisões técnicas.</p>
+          </div>
+          <a class="text-link" href="projetos.html">Ver todos os projetos <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="project-grid" data-reveal>
+          <a class="project-card" href="projetos.html#sispatrimonio">
+            <div class="cover cover-a" aria-hidden="true">
+              <span class="cover-index mono">01</span>
+              <span class="cover-cat mono">Web</span>
+              <span class="cover-flow mono"><span>VB6</span><span class="arrow">→</span><span>Web</span></span>
+              <span class="cover-note mono">C# · MVC · Razor</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta mono"><span>Web</span><span>Sistema interno</span></div>
+              <h3 class="card-title">SisPatrimonio</h3>
+              <p class="card-summary">Migração de um sistema de gestão de ativos do legado VB6 para o navegador, com C#, ASP.NET MVC e Razor.</p>
+              <p class="card-stack mono">C# · ASP.NET MVC · Razor · SQL Server · Git</p>
+              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projetos.html#knowli">
+            <div class="cover cover-b" aria-hidden="true">
+              <span class="cover-index mono">02</span>
+              <span class="cover-cat mono">Acadêmico</span>
+              <span class="cover-flow mono"><span>Curso</span><span class="arrow">→</span><span>Período</span><span class="arrow">→</span><span>Matéria</span></span>
+              <span class="cover-note mono">ASP.NET Core 8</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta mono"><span>Acadêmico</span><span>Hackathon 2026</span></div>
+              <h3 class="card-title">Knowli</h3>
+              <p class="card-summary">Plataforma para centralizar materiais de estudo por curso, período e matéria, com perfis de aluno e administrador.</p>
+              <p class="card-stack mono">C# · ASP.NET Core 8 · EF Core · SQL Server · Bootstrap</p>
+              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <a class="project-card" href="projetos.html#automacao">
+            <div class="cover cover-c" aria-hidden="true">
+              <span class="cover-index mono">03</span>
+              <span class="cover-cat mono">Automação</span>
+              <span class="cover-flow mono"><span>Tarefa manual</span><span class="arrow">→</span><span>Script</span><span class="arrow">→</span><span>Menos tempo</span></span>
+              <span class="cover-note mono">Python</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta mono"><span>Automação</span><span>Rotina interna</span></div>
+              <h3 class="card-title">Automação de rotinas</h3>
+              <p class="card-summary">Scripts em Python para automatizar tarefas administrativas repetitivas e devolver tempo ao time.</p>
+              <p class="card-stack mono">Python · Processos administrativos</p>
+              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="experiencia-title">Experiência</h2>
+        </div>
+
+        <ol class="timeline" data-reveal>
+          <li class="timeline-item">
+            <div class="timeline-meta mono">
+              <span>05/2026 a atual</span>
+              <span>Estágio</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Estagiário de TI</h3>
+              <p class="timeline-org">Volkswagen Caminhões e Ônibus · CARESE Carroceria &amp; Pintura</p>
+              <ul class="timeline-list">
+                <li>Suporte técnico e de redes em ambiente industrial, com diagnóstico e resolução de problemas em sistemas e infraestrutura.</li>
+                <li>Mapeamento de necessidades operacionais e digitalização de processos com Microsoft 365, Power Apps e Power Automate.</li>
+                <li>Criação e manutenção de dashboards gerenciais em Power BI para apoiar a tomada de decisão.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-meta mono">
+              <span>10/2024 a 05/2026</span>
+              <span>Assistente</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Assistente de TI</h3>
+              <p class="timeline-org">Transporte Excelsior</p>
+              <ul class="timeline-list">
+                <li>Desenvolvimento do SisPatrimonio em C# com ASP.NET MVC e Razor, migrando um sistema de gestão de ativos do legado VB6 para o navegador.</li>
+                <li>Automação de tarefas manuais com scripts em Python e estruturação de consultas, procedures e views em SQL Server.</li>
+                <li>Integração de sistemas via SOAP/XML e API REST, com Git no controle de versão.</li>
+                <li>Suporte de nível 1, Active Directory, redes Mikrotik e TOTVS Protheus.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-meta mono">
+              <span>04/2024 a 09/2024</span>
+              <span>Estágio</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Estagiário de TI</h3>
+              <p class="timeline-org">Transporte Excelsior</p>
+              <ul class="timeline-list">
+                <li>Suporte técnico presencial e remoto a usuários, com atendimento e resolução de chamados.</li>
+                <li>Consultas em SQL Server e apoio à manutenção de sistemas internos.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="formacao" aria-labelledby="formacao-title">
+      <div class="wrap split-grid">
+        <div data-reveal>
+          <h2 id="formacao-title">Formação</h2>
+          <div class="edu">
+            <h3>Bacharelado em Sistemas de Informação</h3>
+            <p>UGB · Centro Universitário Geraldo Di Biase</p>
+            <p class="mono">6º período · conclusão prevista em 12/2027</p>
+          </div>
+
+          <h3 class="subhead">Idiomas</h3>
+          <ul class="inline-list">
+            <li><strong>Português</strong> nativo</li>
+            <li><strong>Inglês</strong> avançado</li>
+          </ul>
+        </div>
+
+        <div data-reveal>
+          <h2>Habilidades</h2>
+
+          <div class="skill-group">
+            <h3>Desenvolvimento e automação</h3>
+            <ul class="chips">
+              <li>C#</li>
+              <li>VB6</li>
+              <li>VB.NET</li>
+              <li>Python</li>
+              <li>pandas</li>
+              <li>ASP.NET MVC</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Dados e integração</h3>
+            <ul class="chips">
+              <li>SQL Server</li>
+              <li>Power BI</li>
+              <li>APIs REST</li>
+              <li>SOAP/XML</li>
+              <li>CSV</li>
+              <li>JSON</li>
+              <li>XLSX</li>
+              <li>Excel avançado</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3>Suporte e transformação digital</h3>
+            <ul class="chips">
+              <li>Windows</li>
+              <li>Active Directory</li>
+              <li>Redes Mikrotik</li>
+              <li>TOTVS Protheus</li>
+              <li>Microsoft 365</li>
+              <li>Power Apps</li>
+              <li>Power Automate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contato" aria-labelledby="contato-title">
+      <div class="wrap contact-grid">
+        <div data-reveal>
+          <h2 id="contato-title">Contato</h2>
+          <p class="contact-copy">Para oportunidades, projetos ou uma conversa sobre automação e dados, o e-mail é o caminho mais direto.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:eduardofilho268@outlook.com">Enviar e-mail</a>
+            <button class="btn btn-ghost" type="button" data-copy-email="eduardofilho268@outlook.com">Copiar e-mail</button>
+          </div>
+          <p class="copy-status mono" role="status" aria-live="polite" data-copy-status></p>
+        </div>
+
+        <ul class="contact-list" data-reveal>
+          <li><span class="mono">E-mail</span><a href="mailto:eduardofilho268@outlook.com">eduardofilho268@outlook.com</a></li>
+          <li><span class="mono">GitHub</span><a href="https://github.com/ohcarlos" target="_blank" rel="noopener noreferrer">github.com/ohcarlos<span class="sr-only"> (abre em nova aba)</span></a></li>
+          <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/carlos-eduardo-ataide-pedro-3435bb248/" target="_blank" rel="noopener noreferrer">/in/carlos-eduardo-ataide-pedro<span class="sr-only"> (abre em nova aba)</span></a></li>
+          <li><span class="mono">Local</span><span>Volta Redonda, RJ</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Carlos Eduardo de Ataide Pedro</p>
+      <ul class="footer-links">
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="https://github.com/ohcarlos" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/carlos-eduardo-ataide-pedro-3435bb248/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="assets/CV_Carlos_Eduardo.pdf" download>CV</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "skills": {
+    "frontend-design": {
+      "source": "vudovn/ag-kit",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/frontend-design/SKILL.md",
+      "computedHash": "ab554a890a80e0cafe63018bf457cf1de856856defe43d62d54e99ded382c19e"
+    }
+  }
+}

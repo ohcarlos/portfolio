@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Carlos Eduardo de Ataide Pedro</title>
+  <meta name="description" content="Cases de SisPatrimonio, Knowli e automações em Python, com contexto, problema, solução e stack.">
+  <meta name="theme-color" content="#0F1210">
+  <meta property="og:title" content="Projetos | Carlos Eduardo de Ataide Pedro">
+  <meta property="og:description" content="Sistemas, hackathon e automação: três cases com contexto e decisões técnicas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      try {
+        var theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="preload" href="assets/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Carlos Ataide, início">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Carlos Ataide</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" data-nav="inicio">Início</a></li>
+          <li><a href="projetos.html" data-nav="projetos" aria-current="page">Projetos</a></li>
+          <li><a href="index.html#experiencia" data-nav="experiencia">Experiência</a></li>
+          <li><a href="index.html#contato" data-nav="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar tema claro">
+          <svg class="icon icon-sun" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="page-head">
+      <div class="wrap">
+        <p class="hero-kicker mono">Projetos selecionados</p>
+        <h1>Projetos</h1>
+        <p class="page-lede">Três frentes de trabalho: um sistema interno migrado para a web, um produto para hackathon e automações de rotina. Cada card abre o contexto, o problema e a solução.</p>
+        <p class="project-count mono" id="project-count" role="status" aria-live="polite">3 projetos</p>
+      </div>
+    </div>
+
+    <section class="projects-section" aria-label="Lista de projetos">
+      <div class="wrap">
+        <div class="filters" role="tablist" aria-label="Filtrar projetos por categoria">
+          <button class="filter-tab" type="button" role="tab" id="tab-todos" aria-selected="true" aria-controls="projects-panel" tabindex="0" data-filter="todos">Todos</button>
+          <button class="filter-tab" type="button" role="tab" id="tab-web" aria-selected="false" aria-controls="projects-panel" tabindex="-1" data-filter="web">Web</button>
+          <button class="filter-tab" type="button" role="tab" id="tab-academico" aria-selected="false" aria-controls="projects-panel" tabindex="-1" data-filter="academico">Acadêmico</button>
+          <button class="filter-tab" type="button" role="tab" id="tab-automacao" aria-selected="false" aria-controls="projects-panel" tabindex="-1" data-filter="automacao">Automação</button>
+        </div>
+
+        <section id="projects-panel" role="tabpanel" aria-labelledby="tab-todos" tabindex="0">
+          <div class="project-grid project-grid-page" data-projects-grid></div>
+          <div class="empty-state" data-empty-state hidden>
+            <p>Nenhum projeto nesta categoria por enquanto.</p>
+            <button class="btn btn-ghost" type="button" data-clear-filter>Limpar filtros</button>
+          </div>
+        </section>
+
+        <noscript>
+          <div class="noscript-note">
+            <p>Os cases interativos precisam de JavaScript. Resumo dos projetos:</p>
+            <ul>
+              <li><strong>SisPatrimonio:</strong> sistema de gestão de ativos migrado de VB6 para a web em C#, ASP.NET MVC e Razor.</li>
+              <li><strong>Knowli:</strong> plataforma de materiais de estudo por curso, período e matéria, feita no Hackathon UGB 2026. <a href="https://github.com/UgoCoelho/KNOWLI-Hackathon-UGB">Repositório no GitHub</a>.</li>
+              <li><strong>Automação de rotinas:</strong> scripts em Python para reduzir trabalho administrativo manual.</li>
+            </ul>
+          </div>
+        </noscript>
+
+        <div class="page-cta">
+          <p>Tem uma oportunidade ou quer trocar ideia sobre algum projeto?</p>
+          <a class="btn btn-primary" href="mailto:eduardofilho268@outlook.com">Enviar e-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title">
+    <button class="case-close" type="button" data-close-case aria-label="Fechar case">
+      <svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+      </svg>
+    </button>
+    <div class="case-scroll" data-case-content></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> Carlos Eduardo de Ataide Pedro</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="https://github.com/ohcarlos" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/carlos-eduardo-ataide-pedro-3435bb248/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="assets/CV_Carlos_Eduardo.pdf" download>CV</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
