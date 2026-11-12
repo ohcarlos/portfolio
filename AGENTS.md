@@ -34,7 +34,7 @@ The repo is `ohcarlos/portfolio` on GitHub, branch `main`, published with GitHub
 - Live site: <https://ohcarlos.github.io/portfolio/>.
 - `.github/workflows/pages.yml` runs on push to `main`, copies `index.html`, `projetos.html` and `assets/` into `_site`, and deploys that. `AGENTS.md`, `.agents/` and `README.md` stay out of the public site on purpose.
 - Pages source is GitHub Actions (Settings > Pages). If the repo is renamed, only the URL changes and the workflow keeps working.
-- The repo was renamed from `portifolio` to `portfolio`; GitHub redirects the old repository URL, and the old Pages URL redirects too.
+- The repo was renamed from `portifolio` to `portfolio`; GitHub redirects the old repository URL, so git keeps working, but the old Pages URL `https://ohcarlos.github.io/portifolio/` returns 404. Share only the new URL.
 
 ## Frontend design skill
 
