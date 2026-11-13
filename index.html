@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carlos Eduardo de Ataide Pedro | Portfólio</title>
+  <title>Carlos Eduardo | Portfólio</title>
   <meta name="description" content="Portfólio de Carlos Eduardo de Ataide Pedro, estudante de Sistemas de Informação em Volta Redonda, RJ. Projetos de desenvolvimento, automação e dados.">
   <meta name="theme-color" content="#0F1210">
   <meta property="og:title" content="Carlos Eduardo de Ataide Pedro | Portfólio">
@@ -26,6 +26,7 @@
   <link rel="preload" href="assets/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/carousel.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
@@ -72,7 +73,7 @@
         <div class="hero-copy" data-reveal>
           <p class="hero-kicker mono">Portfólio · 2026</p>
           <h1 class="hero-title" id="hero-title">Carlos Eduardo <span>de Ataide Pedro</span></h1>
-          <p class="hero-role">Estagiário de TI na Volkswagen Caminhões e Ônibus</p>
+          <p class="hero-role">Desenvolvedor Full Stack em Formação</p>
           <p class="hero-sub">Desenvolvo automações, sistemas e dashboards que reduzem trabalho manual e apoiam decisões.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="projetos.html">Ver projetos</a>
@@ -115,7 +116,7 @@
     <section class="section" id="sobre" aria-labelledby="sobre-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 id="sobre-title">Do suporte à automação</h2>
+          <h2 id="sobre-title">Do suporte ao desenvolvimento</h2>
         </div>
         <div class="about-grid">
           <div class="prose" data-reveal>
@@ -150,54 +151,69 @@
           <a class="text-link" href="projetos.html">Ver todos os projetos <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="project-grid" data-reveal>
-          <a class="project-card" href="projetos.html#sispatrimonio">
-            <div class="cover cover-a" aria-hidden="true">
-              <span class="cover-index mono">01</span>
-              <span class="cover-cat mono">Web</span>
-              <span class="cover-flow mono"><span>VB6</span><span class="arrow">→</span><span>Web</span></span>
-              <span class="cover-note mono">C# · MVC · Razor</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta mono"><span>Web</span><span>Sistema interno</span></div>
-              <h3 class="card-title">SisPatrimonio</h3>
-              <p class="card-summary">Migração de um sistema de gestão de ativos do legado VB6 para o navegador, com C#, ASP.NET MVC e Razor.</p>
-              <p class="card-stack mono">C# · ASP.NET MVC · Razor · SQL Server · Git</p>
-              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
-            </div>
-          </a>
+        <div class="carousel" data-carousel data-reveal>
+          <div class="carousel-bar">
+            <button class="carousel-btn" type="button" data-carousel-prev aria-label="Projeto anterior" disabled>
+              <svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              </svg>
+            </button>
+            <button class="carousel-btn" type="button" data-carousel-next aria-label="Próximo projeto" disabled>
+              <svg class="icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+          </div>
 
-          <a class="project-card" href="projetos.html#knowli">
-            <div class="cover cover-b" aria-hidden="true">
-              <span class="cover-index mono">02</span>
-              <span class="cover-cat mono">Acadêmico</span>
-              <span class="cover-flow mono"><span>Curso</span><span class="arrow">→</span><span>Período</span><span class="arrow">→</span><span>Matéria</span></span>
-              <span class="cover-note mono">ASP.NET Core 8</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta mono"><span>Acadêmico</span><span>Hackathon 2026</span></div>
-              <h3 class="card-title">Knowli</h3>
-              <p class="card-summary">Plataforma para centralizar materiais de estudo por curso, período e matéria, com perfis de aluno e administrador.</p>
-              <p class="card-stack mono">C# · ASP.NET Core 8 · EF Core · SQL Server · Bootstrap</p>
-              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
-            </div>
-          </a>
+          <div class="carousel-track" data-carousel-track>
+            <a class="project-card" href="projetos.html#sispatrimonio">
+              <div class="cover cover-a" aria-hidden="true">
+                <span class="cover-index mono">01</span>
+                <span class="cover-cat mono">Web</span>
+                <span class="cover-flow mono"><span class="flow-step">Sistema legado<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Migração para web<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Rotina no navegador</span></span>
+                <span class="cover-note mono">C# · MVC · Razor</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta mono"><span>Web</span><span>Sistema interno</span></div>
+                <h3 class="card-title">SisPatrimonio</h3>
+                <p class="card-summary">Migração de um sistema de gestão de ativos do legado VB6 para o navegador, com C#, ASP.NET MVC e Razor.</p>
+                <p class="card-stack mono">C# · ASP.NET MVC · Razor · SQL Server · Git</p>
+                <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
 
-          <a class="project-card" href="projetos.html#automacao">
-            <div class="cover cover-c" aria-hidden="true">
-              <span class="cover-index mono">03</span>
-              <span class="cover-cat mono">Automação</span>
-              <span class="cover-flow mono"><span>Tarefa manual</span><span class="arrow">→</span><span>Script</span><span class="arrow">→</span><span>Menos tempo</span></span>
-              <span class="cover-note mono">Python</span>
-            </div>
-            <div class="card-body">
-              <div class="card-meta mono"><span>Automação</span><span>Rotina interna</span></div>
-              <h3 class="card-title">Automação de rotinas</h3>
-              <p class="card-summary">Scripts em Python para automatizar tarefas administrativas repetitivas e devolver tempo ao time.</p>
-              <p class="card-stack mono">Python · Processos administrativos</p>
-              <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
-            </div>
-          </a>
+            <a class="project-card" href="projetos.html#knowli">
+              <div class="cover cover-b" aria-hidden="true">
+                <span class="cover-index mono">02</span>
+                <span class="cover-cat mono">Acadêmico</span>
+                <span class="cover-flow mono"><span class="flow-step">Material disperso<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Organização por matéria<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Estudo centralizado</span></span>
+                <span class="cover-note mono">ASP.NET Core 8</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta mono"><span>Acadêmico</span><span>Hackathon 2026</span></div>
+                <h3 class="card-title">Knowli</h3>
+                <p class="card-summary">Plataforma para centralizar materiais de estudo por curso, período e matéria, com perfis de aluno e administrador.</p>
+                <p class="card-stack mono">C# · ASP.NET Core 8 · EF Core · SQL Server · Bootstrap</p>
+                <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+
+            <a class="project-card" href="projetos.html#automacao">
+              <div class="cover cover-c" aria-hidden="true">
+                <span class="cover-index mono">03</span>
+                <span class="cover-cat mono">Automação</span>
+                <span class="cover-flow mono"><span class="flow-step">Tarefa manual<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Script em Python<span class="arrow" aria-hidden="true">→</span></span><span class="flow-step">Rotina automática</span></span>
+                <span class="cover-note mono">Python</span>
+              </div>
+              <div class="card-body">
+                <div class="card-meta mono"><span>Automação</span><span>Rotina interna</span></div>
+                <h3 class="card-title">Automação de rotinas</h3>
+                <p class="card-summary">Scripts em Python para automatizar tarefas administrativas repetitivas e devolver tempo ao time.</p>
+                <p class="card-stack mono">Python · Processos administrativos</p>
+                <span class="card-cta">Abrir case <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

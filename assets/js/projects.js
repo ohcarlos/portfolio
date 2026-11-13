@@ -13,7 +13,7 @@
         "Migração de um sistema de gestão de ativos do legado VB6 para o navegador, com C#, ASP.NET MVC e Razor.",
       stack: ["C#", "ASP.NET MVC", "Razor", "SQL Server", "Git"],
       coverClass: "cover-a",
-      coverFlow: ["VB6", "Web"],
+      coverFlow: ["Sistema legado", "Migração para web", "Rotina no navegador"],
       coverNote: "C# · MVC · Razor",
       context:
         "O setor de TI usava um sistema de gestão de ativos em VB6, preso ao ambiente desktop.",
@@ -47,7 +47,7 @@
         "Bootstrap 5"
       ],
       coverClass: "cover-b",
-      coverFlow: ["Curso", "Período", "Matéria"],
+      coverFlow: ["Material disperso", "Organização por matéria", "Estudo centralizado"],
       coverNote: "ASP.NET Core 8",
       context: "Hackathon UGB 2026, equipe KnowLi com cinco integrantes.",
       problem:
@@ -84,7 +84,7 @@
         "Scripts em Python para automatizar tarefas administrativas repetitivas e devolver tempo ao time.",
       stack: ["Python", "Processos administrativos"],
       coverClass: "cover-c",
-      coverFlow: ["Tarefa manual", "Script", "Menos tempo"],
+      coverFlow: ["Tarefa manual", "Script em Python", "Rotina automática"],
       coverNote: "Python",
       context:
         "Tarefas administrativas manuais tomavam parte do dia e dependiam de repetição.",
@@ -129,8 +129,10 @@
     var flow = project.coverFlow
       .map(function (label, index) {
         var arrow =
-          index > 0 ? '<span class="arrow" aria-hidden="true">\u2192</span>' : "";
-        return arrow + "<span>" + label + "</span>";
+          index < project.coverFlow.length - 1
+            ? '<span class="arrow" aria-hidden="true">\u2192</span>'
+            : "";
+        return '<span class="flow-step">' + label + arrow + "</span>";
       })
       .join("");
 
@@ -199,6 +201,8 @@
     if (emptyState) {
       emptyState.hidden = visible.length > 0;
     }
+
+    document.dispatchEvent(new CustomEvent("projects:rendered"));
   }
 
   function activate(filter) {

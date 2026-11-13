@@ -660,10 +660,71 @@ h2 {
 
 /* Projetos ---------------------------------------------------------------- */
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.carousel {
+  position: relative;
+}
+
+.carousel--page {
+  margin-top: 28px;
+}
+
+.carousel-bar {
+  display: none;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.carousel.has-overflow .carousel-bar {
+  display: flex;
+}
+
+.carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.carousel-track {
+  display: flex;
   gap: 18px;
+  margin-inline: -6px;
+  padding: 6px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 6px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track > .project-card {
+  flex: 0 0 calc((100% - 36px) / 3);
+  scroll-snap-align: start;
 }
 
 .project-card {
@@ -744,12 +805,18 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 7px;
+  gap: 6px 10px;
   padding-right: 12px;
   color: var(--text);
   font-size: 0.8rem;
   letter-spacing: -0.01em;
   line-height: 1.4;
+}
+
+.flow-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .cover-flow .arrow {
@@ -1142,10 +1209,6 @@ h2 {
   font-weight: 500;
 }
 
-.project-grid-page {
-  margin-top: 28px;
-}
-
 .empty-state {
   margin-top: 28px;
   padding: 48px 24px;
@@ -1400,8 +1463,8 @@ body.dialog-open {
     grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
   }
 
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .carousel-track > .project-card {
+    flex-basis: calc((100% - 18px) / 2);
   }
 }
 
@@ -1488,10 +1551,6 @@ body.dialog-open {
     flex-direction: row;
     gap: 14px;
   }
-
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 639px) {
@@ -1503,8 +1562,8 @@ body.dialog-open {
     font-size: clamp(2.3rem, 10.5vw, 3rem);
   }
 
-  .project-grid {
-    grid-template-columns: minmax(0, 1fr);
+  .carousel-track > .project-card {
+    flex-basis: 100%;
   }
 
   .section-head-row {
