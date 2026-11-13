@@ -492,7 +492,7 @@ button {
 @supports (grid-template-columns: subgrid) {
   .id-card dl {
     display: grid;
-    grid-template-columns: minmax(84px, max-content) minmax(0, 1fr);
+    grid-template-columns: max-content minmax(0, 1fr);
     column-gap: 12px;
   }
 
@@ -501,7 +501,8 @@ button {
     grid-template-columns: subgrid;
   }
 
-  .id-card dt {
+  .id-card dt,
+  .id-card dd {
     white-space: nowrap;
   }
 }
@@ -1596,7 +1597,8 @@ body.dialog-open {
   }
 
   .contact-list li,
-  .case-facts > div {
+  .case-facts > div,
+  .id-card dl > div {
     grid-template-columns: minmax(0, 1fr);
     gap: 4px;
   }
@@ -1609,5 +1611,11 @@ body.dialog-open {
   .case-close {
     top: 10px;
     right: 10px;
+  }
+}
+
+@media (max-width: 359px) {
+  .id-card dd {
+    font-size: 0.8rem;
   }
 }
