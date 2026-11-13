@@ -489,6 +489,23 @@ button {
   border-top: 1px solid var(--line);
 }
 
+@supports (grid-template-columns: subgrid) {
+  .id-card dl {
+    display: grid;
+    grid-template-columns: minmax(84px, max-content) minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .id-card dl > div {
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+
+  .id-card dt {
+    white-space: nowrap;
+  }
+}
+
 .id-card dt {
   color: var(--muted);
   font-family: var(--font-mono);
