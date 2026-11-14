@@ -486,7 +486,6 @@ button {
   grid-template-columns: 84px minmax(0, 1fr);
   gap: 12px;
   padding: 11px 0;
-  border-top: 1px solid var(--line);
 }
 
 @supports (grid-template-columns: subgrid) {
@@ -523,7 +522,6 @@ button {
 .id-card-foot {
   margin-top: 4px;
   padding-top: 14px;
-  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.66rem;
   letter-spacing: 0.12em;
