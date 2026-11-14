@@ -717,6 +717,32 @@ h2 {
   cursor: default;
 }
 
+.carousel-toggle {
+  display: none;
+}
+
+.carousel.is-auto .carousel-toggle {
+  display: inline-flex;
+}
+
+.carousel.is-auto [data-carousel-prev],
+.carousel.is-auto [data-carousel-next] {
+  display: none;
+}
+
+.carousel-toggle .icon-play,
+.carousel-toggle[aria-pressed="true"] .icon-pause {
+  display: none;
+}
+
+.carousel-toggle[aria-pressed="true"] .icon-play {
+  display: block;
+}
+
+.carousel.is-auto .carousel-track {
+  scroll-snap-type: none;
+}
+
 .carousel-track {
   display: flex;
   gap: 18px;
